@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
@@ -30,15 +31,16 @@
     <link rel="stylesheet" href="assets/css/style_app.css">
 
 </head>
+
 <body>
     <div class="logo">
-        <a href="index.html"><img src="devmodroid-logo_jpeg.jpg" alt="Logo" style="width: 100%;"></a>
+        <a href="/index.html"><img src="devmodroid-logo_jpeg.jpg" alt="Logo" style="width: 100%;"></a>
     </div>
     <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/spotify-icon.png"
         alt="Spotify Logo" class="app-logo">
     <h1 style="font-size: 4vh;">Spotify Premium v8.9.98.488 MOD APK [Premium Unlocked] for Android</h1>
     <h2 style="font-size: 2.5vh;">Download Spotify MOD APK for unlimited skips, ad-free music streaming, and offline
-        playback – enjoy your favorite tunes without limits.</h2> 
+        playback – enjoy your favorite tunes without limits.</h2>
 
     <iframe data-aa='2369744' src='//ad.a-ads.com/2369744?size=320x100'
         style='width:320px; height:100px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
@@ -56,7 +58,8 @@
         </div>
     </div>
 
-    <iframe data-aa='2370038' src='//ad.a-ads.com/2370038?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+    <iframe data-aa='2370038' src='//ad.a-ads.com/2370038?size=300x250'
+        style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
 
     <div class="buttons">
         <a href="#" class="download" id="downloadButton1">Link 1</a>
@@ -64,8 +67,8 @@
         <a href="index.html" class="back">Back to Home</a>
     </div>
 
-      <!-- Specifications Table -->
-      <table>
+    <!-- Specifications Table -->
+    <table>
         <caption><strong>App Specifications</strong></caption>
         <tr>
             <th>Specification</th>
@@ -81,7 +84,7 @@
         </tr>
         <tr>
             <td>File Size</td>
-            <td>Varies by device</td>
+            <td>30MB</td>
         </tr>
         <tr>
             <td>Developer</td>
@@ -91,50 +94,50 @@
             <td>Rating</td>
             <td>4.5 / 5</td>
         </tr>
-    </table>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; Devmodroid. All rights reserved.</p>
-    </footer>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Devmodroid. All rights reserved.</p>
+        </footer>
 
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 
-    <script>
-        // Disable other buttons and make them unclickable when one button is clicked
-        function addDownloadTimer(button, url, allButtons) {
-            button.addEventListener('click', function (event) {
-                event.preventDefault();
-                let timer = 3; // 3 second timer
-                button.textContent = `Wait ${timer} seconds`;
-    
-                // Disable all other buttons and make them unclickable
-                allButtons.forEach(btn => {
-                    if (btn !== button) {
-                        btn.disabled = true;
-                        btn.style.cursor = 'not-allowed'; // Change cursor style for disabled buttons
-                        btn.style.pointerEvents = 'none'; // Prevent clicks on the disabled button
-                    }
-                });
-    
-                const countdown = setInterval(() => {
-                    timer--;
+        <script>
+            function addDownloadTimer(button, url, allButtons) {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    let timer = 3; // 3-second timer
                     button.textContent = `Wait ${timer} seconds`;
-                    if (timer === 0) {
-                        clearInterval(countdown);
-                        window.location.href = url; // Replace with your download link
-                    }
-                }, 1000);
-            });
-        }
-    
-        const downloadButton1 = document.getElementById('downloadButton1');
-        const downloadButton2 = document.getElementById('downloadButton2');
-    
-        // Ensure the URLs are correct and accessible
-        addDownloadTimer(downloadButton1, 'spotify_download_link1.html', [downloadButton1, downloadButton2]);
-        addDownloadTimer(downloadButton2, 'spotify_download_link2.html', [downloadButton1, downloadButton2]);
-    </script>
-    
+
+                    // Disable all other buttons and make them unclickable
+                    allButtons.forEach(btn => {
+                        if (btn !== button) {
+                            btn.disabled = true;
+                            btn.style.cursor = 'not-allowed'; // Change cursor style for disabled buttons
+                            btn.style.pointerEvents = 'none'; // Prevent clicks on the disabled button
+                        }
+                    });
+
+                    const countdown = setInterval(() => {
+                        timer--;
+                        button.textContent = `Wait ${timer} seconds`;
+                        if (timer === 0) {
+                            clearInterval(countdown);
+                            window.location.href = url; // Replace with your download link
+                        }
+                    }, 1000);
+                });
+            }
+
+            const downloadButton1 = document.getElementById('downloadButton1');
+            const downloadButton2 = document.getElementById('downloadButton2');
+
+            // Ensure the URLs are correct and accessible
+            addDownloadTimer(downloadButton1, '/download_pages/spotify_download_link1.html', [downloadButton1, downloadButton2]);
+            addDownloadTimer(downloadButton2, '/download_pages/spotify_download_link2.html', [downloadButton1, downloadButton2]);
+
+        </script>
+
 </body>
+
 </html>
